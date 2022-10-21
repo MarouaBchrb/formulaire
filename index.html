@@ -1,73 +1,87 @@
 
 <!DOCTYPE html>
 <html lang="fr">
-	<head>
-	<br><br>
-	
-		<meta charset="UTF-8">
-		<title>éage1</title>
-		<meta name="keywords" content="web,html">
-		<script src="nv.js">
-		</script>
-	</head>
-	<body>
+
+<head>
+	<meta charset="UTF-8">
+	<title>formulaire</title>
+	<meta name="keywords" content="web,html">
+	<script src="nv.js">	</script>
+</head>
+<body>
 	<form method="POST" action="reception.PHP">
-	   <fieldset>
-	     <legend><b>Candidat:</b></legend>
-		 <fieldset>
-	     <legend><b>Identitie</b></legend>
-		    <label> Sexe </label>
-			<select name="Sexe">
-				   <option value =""> </option>
-				   <option value ="F">Femme</option>
-				   <option value ="H">Homme</option>
-		    </select>
-		    <label> Situation </label>
-		    <select name="Situation">
+	   	<fieldset>
+	    		 <legend><b>Candidat:</b></legend>
+			 <fieldset>
+		 		<legend><b>Identitie:</b></legend>
+				
+	     			<label>Nom:</label>
+					<input type="text" name="Nom">		<br><br>
+					
+				<label>Prenom:</label>
+					<input type="text" name="Prenom">	<br><br>
+			
+				<label>Sexe:</label>
+				<select name="Sexe">
+					<option value =""> </option>
+				   	<option value ="F">Femme</option>
+				   	<option value ="H">Homme</option>
+		   		 </select>
+				 
+				<label>Adresse e-mail:</label>
+					<input type="email" name="adresse_email>  	<br><br>
+					
+		    		<label>Situation:</label>
+		   		<select name="Situation">
 			           <option value =""> </option>
 				   <option value ="marier">marier </option>
 				   <option value ="celibataire">celibataire</option>
 				   <option value ="devorcer">devorcer </option>
-		    </select><br><br>
-			<label> Nom \ Prenom</label>
-			<input type="text" name="ecrire nom prenom"><br><br>
-			<label> adresse </label><br><br>
-	        <textarea rows="5" cols="25">
-						Rue No &#10Boite postal
-		    </textarea><br><br>
-			<label> code postale \ ville </label>
-			<input type="text" name="code ">
-			<input type="text" name="ville">
-			 <label>wilaya</label>
-		    <select name="wilaya">
+		   		 </select>	<br><br>
+				 
+				<label>Adresse:</label><br><br>
+	        			<textarea rows="5" cols="25">
+		    			</textarea>	<br><br>
+					
+				 <label>Wilaya:</label>
+		    		 <select name="wilaya">
 			           	 <option value ="Adrar">01 Adrar</option>
 			    		 <option value ="Blida">09 Blida </option>
 				   	 <option value ="Alger">16 Alger</option>
 				   	 <option value ="Jijel">18 Jijel</option>
 			    	   	 <option value ="Constantine">25 Constantine</option>
-		    </select><br><br>
-	   </fieldset>
-	   <fieldset>
-		<legend><b> connaissence en informatique </b> </legend>
-		<label> Platforme : </label>
-		<input type="radio" name="Platforme" value="Windows">Windows
-		<input type="radio" name="Platforme" value="Android">Android
-		<input type="radio" name="Platforme" valua="Unix">Unix
+		   		 </select>	<br><br>
+				 
+				<label>Ville:</label>
+				<input type="text" name="ville">
+			
+	  		 </fieldset>
+	   		 <fieldset>
+			 <legend><b>Compétences en informatique:</b> </legend>
+			
+			 <label>Platforme(s):</label>
+				<input type="checkbox"name="Windows">Windows
+				<input type="checkbox" name="Android">Android
+				<input type="checkbox" name="Unix">Unix		<br><br>
+				
+			 <label>Langage(s) de programmation:</label>
+		 		<input type="checkbox" name="Java">Java
+				<input type="checkbox" name="C++">C++
+				<input type="checkbox" name="Python">Python
+				<input type="checkbox" name="PHP">PHP	<br><br>
+	 		 </fieldset>	<br><br>
+			 
+	  		<label>Upload votre CV:</label>
+	 			 <input type="file" accept=".PDF,.DOCX"> (Ficher pdf ou docx )
+				 
+	  	</fieldset>
+		
+	  		<input type ="submit" value ="Valider le formulaire" >
+			<input type ="reset" value="Rémplire le formulaire" >
 		<br><br>
-		<label> application </label>
-		<select name="aplication">
-		  <option value="bureautique">bureautique</option>
-		  <option value="info">info</option>
-		</select>
-	  </fieldset>
-	  <label> Envotez nous votre cv </label>
-	  <input type="file" accept=".pdf ,.docx"> (pdf docx )
-	  </fieldset>
-	  <input type ="submit" value =" valider" >
-		<input type ="reset" value="effacer" >
-		<br><br>
+		
 	  </form>
-	  </body>
-	</html>
+</body>
+</html>
 	  
 	     
